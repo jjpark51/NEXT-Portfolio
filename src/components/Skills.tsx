@@ -25,21 +25,21 @@ function Skills() {
 
 
 
-      <div><div className={skills.frontend}><center><span>Frontend</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[0].map(e => ( 
-              < Cards {...e} />
+      <div><div className={skills.frontend}><center><span>Frontend</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[0].map((e, key) => ( 
+              < Cards {...e} key={key} />
       ))}</div></div>
-      <div><div className={skills.backend}><center><span>Backend</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[1].map(e => ( 
-              < Cards {...e} />
+      <div><div className={skills.backend}><center><span>Backend</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[1].map((e,key) => ( 
+              < Cards {...e} key={key}/>
       ))}</div></div>
-      <div className='version-control'>        <div className={skills.backend}><center><span>Version Control</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[2].map(e => ( 
-              < Cards {...e} />
+      <div className='version-control'>        <div className={skills.backend}><center><span>Version Control</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[2].map((e,key) => ( 
+              < Cards {...e} key={key}/>
       ))}</div></div>
-      <div className='AI'>   <div className={skills.backend}><center><span>Artificial Intelligence</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[3].map(e => ( 
-              < Cards {...e} />
+      <div className='AI'>   <div className={skills.backend}><center><span>Artificial Intelligence</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[3].map((e,key) => ( 
+              < Cards {...e} key={key}/>
       ))}</div></div>
       <div>
-      <div className={skills.backend}><center><span>Others</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[4].map(e => ( 
-              < Cards {...e} />
+      <div className={skills.backend}><center><span>Others</span><br/><a style={{color: '#214832'}}> ____________________________ </a></center>{ frontend[4].map((e,key) => ( 
+              < Cards {...e} key={key}/>
       ))}</div>
       </div>
 

@@ -29,7 +29,6 @@ function ProjCard({name, date, img, demo, description, github, tech, type}: Proj
 const techArray = tech
 
 const DescArray = description;
-console.log(DescArray[0])
   
   return (
     <>
@@ -46,11 +45,12 @@ console.log(DescArray[0])
           ))
         }
       </div>
-      <div className={projects.projTech}><CheckCircleIcon style={{color: '#f96815'}}/><b> 기술 스텍: </b>{techArray.map(e => {
+      <div className={projects.projTech}><CheckCircleIcon style={{color: '#f96815'}}/><b> 기술 스텍: </b>{techArray.map((e ,key)=> {
         <>
         </>
                 return(
-          e)
+                  <div key={key}>
+                  {e}</div>)
       })} </div>
       <div className={projects.projType}><CheckCircleIcon style={{color: '#f96815'}}/><b> 유형: </b> {type}</div>
 
