@@ -46,8 +46,6 @@ const DescArray = description;
         }
       </div>
       <div className={projects.projTech}><CheckCircleIcon style={{color: '#f96815'}}/><b> 기술 스텍: </b>{techArray.map((e ,key)=> {
-        <>
-        </>
                 return(
                   <div key={key}>
                   {e}</div>)
