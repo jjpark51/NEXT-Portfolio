@@ -8,7 +8,7 @@ function Tiger() {
     <div className={tiger.tiger}>
           <Fade duration={5500}>
 
-        <h1>Hi, I&lsquo;single quotation mark&rsquo;m <span style={{color: '#f96815'}}>Jinsuk</span>. <br /> </h1>
+        <h1>Hi, I&apos;m <span style={{color: '#f96815'}}>Jinsuk</span>. <br /> </h1>
         </Fade>
 
     </div>
