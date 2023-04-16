@@ -40,8 +40,8 @@ const DescArray = description;
       </div>
       <div className={projects.projDesc}>
         {
-          DescArray.map((e, index) => (
-            <div key={index}>{e}<br /><br/> </div>
+          DescArray.map((e, key) => (
+            <div key={key}>{e}<br /><br/> </div>
           ))
         }
       </div>
